@@ -1,0 +1,35 @@
+/* panel */
+.panel{
+    height: 40px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: rgb(52, 48, 48);
+    color: white;
+ }
+ 
+ .panel-menu{
+    margin-left: 20px;
+    height: 35px;
+    display: flex;
+    /* justify-content:space-between; */
+    align-items: center;
+ }
+ 
+ .panel-ops{
+    width: 70%;
+ }
+ .panel-ops p{
+    display: inline;
+    margin-left: 20px;
+ }
+ 
+ .panel-deals{
+    height: 35px;
+    display: flex;
+    /* justify-content:space-between; */
+    align-items: center;
+    margin-right: 20px;
+ }
+
+ 

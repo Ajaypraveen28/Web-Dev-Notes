@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DOM Projects</title>
+    <style>
+      body {
+        font-family: Arial;
+      }
+
+      .subscribe-button {
+        border: none;
+        background-color: black;
+        color: white;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-weight: bold;
+        border-radius: 50px;
+        cursor: pointer;  
+        /* cursor CSS property sets the mouse cursor, if any, to show when the mouse pointer is over an element. */
+        margin-bottom: 30px;
+      }
+      
+      .is-subscribed {
+        background-color: rgb(240, 240, 240);
+        color: black;
+      }
+
+      .cost-input {
+        font-size: 15px;
+        /*
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        */
+        padding: 10px;
+      }
+
+      .calculate-button {
+        background-color: green;
+        color: white;
+        border: none;
+        font-size: 15px;
+        padding: 12px 15px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+
+
+
+    <!-- clicks, keydowns => events
+    onclick, onkeydown => event listeners
+    EVENT LISTENERS --=> onclick, onkeydown, onscroll, onmouseenter, onmouseleave, etc... -->
+
+    <p>YouTube Subscribe Button</p>
+    <button onclick="
+      subscribe();
+    " class="js-subscribe-button subscribe-button">
+      Subscribe
+    </button>
+
+    <p>Amazon Shipping Calculator</p>
+    <input placeholder="Cost of order" class="js-cost-input cost-input" onkeydown="
+      handleCostKeydown(event);
+    ">
+    <button onclick="
+      calculateTotal();
+    " class="calculate-button">Calculate</button>
+    <p class="js-total-cost"></p>
+
+    <script>
+      String(25)
+      console.log('25' - 5); // if string only contains a number and we *, /, - then string will convert into integer. But adding of string work differently.
+      console.log('25' + 5);
+
+      // In this we learnt about document object. Document object represents webpage.
+      // Window is built in objecgt represents browser. Its not necessary to write window.... Window.console.log('window') is same as console.log('window').
+      window.document
+      window.console.log('window');
+      window.alert
+
+      function handleCostKeydown(event) {
+        // event is an action that occurs as per the user's instruction as input and gives the output in response. Here we will check if enter key is pressed or not.
+        if (event.key === 'Enter') {
+          calculateTotal();
+        }
+      }
+
+      function calculateTotal() {
+        const inputElement = document.querySelector('.js-cost-input');
+        let cost = Number(inputElement.value);
+        // inputElement.value will give value inside the input tag.
+        // output of javaScript using document.querySelector(); is always string. so to convert this into integer we use Number() function.
+        // for example Number(inputElement.value);
+
+        if (cost < 40) {
+          cost = cost + 10;
+        }
+
+        document.querySelector('.js-total-cost')
+          .innerHTML = `$${cost}`;
+      }
+
+      function subscribe() {
+        const buttonElement = document.querySelector('.js-subscribe-button');
+
+        if (buttonElement.innerText === 'Subscribe') {  
+          //ineerTEXT will not consider extra spaces so in case of comparison we prefer innerTEXT over innerHTML.
+          buttonElement.innerHTML = 'Subscribed';
+          buttonElement.classList.add('is-subscribed');
+          /* .classList = gives us control of the class attributes */
+          // .add() = adds a class to an element
+        } else {
+          buttonElement.innerHTML = 'Subscribe';
+          buttonElement.classList.remove('is-subscribed');
+        }
+      }
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+/* we use color palette to find matching colors / complimentry colors for website like coolors */
+/* CSS follow bottom up precedence, lower with high priority */
+/* we try to keep unique id for all tags or elements so that we can easily make changes it that */
+/* We can select multiple tags or elements at a time */
+
+
+*{
+    color:yellow;        /* Its used to change everything present in Html file*/
+}
+
+h1,h2,h3,p{                 /* Its used to change in respective heading(h1,h2,...) tags of html*/
+                            /* We can select multiple tags or elements at a time */
+    color : rgb(249, 86, 17);
+}
+p{                  /* Its used to change in p tag of html*/
+    color: rgb(130, 200, 15);
+}
+textarea{           /* Its used to change in textarea of html*/
+    color:rgb(97, 165, 42);
+    background-color: rgb(87, 196, 239);
+}
+body{               /* Its used to change in body of html*/
+    background-color: pink;
+}
+fieldset{             /* Its used to chage in fieldset of html*/
+    color:yellow; 
+}
+legend{             /* Its used to change in legend of html*/
+    color:darkgoldenrod;
+}
+label{                /* Its used to change in label of html*/
+    color:chartreuse;
+}
+button{               /* Its used to change in button of html*/
+    color:rgb(244, 137, 8);  
+}
+input{                /* Its used to input tag of html*/
+    color:blue;
+}
+::placeholder{        /* Its used to change in placeholders of html*/
+    color:chocolate; 
+}
+#dateOfBirth{         /* Its used to change in id (name of id=dateOfBirth) of html*/
+    color:red;
+}
+#selector1{
+    color:coral;
+}
+.learning{            /* Its used to change in class(class name = learning) of html*/
+                      /* All elements or tags with same class will change by this */
+                      /* In example select you city, Date of birt, upload are of same class i.e learning */
+    color:blue;
+}

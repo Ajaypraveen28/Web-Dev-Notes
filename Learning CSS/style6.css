@@ -1,0 +1,31 @@
+div{
+    width:100px;
+    height:100px;
+    margin:25px;
+    padding:25px;
+
+    /* The display CSS property sets whether an element is treated as a block or inline box
+     and the layout used for its children, such as flow layout, grid or flex. */
+    display:inline;
+
+    /* inline --> takes only the space required by the element.(no margin/padding)
+
+    block --> Takes full space available in width.
+
+    inline-block --> Similar to inline but we can set margin and padding. 
+
+    none --> To remove element from document flow. It will be hidden from the site 
+    and there will be no empty space for it. space will be filled by other elements. */
+}
+#box3,#box4{
+    display:block;
+}
+#box5,#box6{
+    display:inline-block;
+}
+#box2{
+    display:none;
+}
+
+/* When VISIBILITY is set to none (visibility:hidden), space for the element is reserved
+But for display set to none, no space is reserved or blocked for the element */

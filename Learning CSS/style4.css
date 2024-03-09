@@ -1,0 +1,48 @@
+/* Padding : Space inside an element
+Margin : Space outside an element */
+
+div {
+  height: 100px;
+  width: 150px;
+  background-color: pink;
+  /* border-width: 2px;
+    border-style: solid;
+    border-color: brown; */
+
+  border: 2px solid brown; /*this is a shorthand for border width,style and color*/
+  text-align: right;
+
+  /* The border-radius CSS property rounds the corners of an element's outer border edge.
+     You can set a single radius to make circular corners, or two radii to make elliptical corners. */
+  border-radius: 20px;
+
+  /* The padding CSS shorthand property sets the padding area on all four sides of an element at once. */
+  padding: 50px;
+
+  /* The margin CSS shorthand property sets the margin area on all four sides of an element. */
+  margin: 20px 50px 30px 40px;
+}
+#two {
+  border: dashed;
+  text-align: center;
+  width: 200px;
+  border-width: 2px 6px;
+  border-radius: 50%; /* if we want to creat circle then we set radius to 50% */
+  margin-left: 70px;
+  padding: 10px 50px 30px 0;
+}
+#three {
+  text-transform: uppercase;
+  width: 300px;
+  border: none;
+  border-radius: 40px 10px;
+  background: gold;
+  margin-top: 40px;
+}
+
+h1 {
+  width: 200px;
+  height: 50px;
+  background-color: aqua;
+  border: 3px dashed black;
+}

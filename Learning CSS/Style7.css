@@ -1,0 +1,39 @@
+*{
+    /* Its a good practice to start with margin=0 and padding=0 */
+    padding:0px;
+    margin:0px;
+}
+
+#bar{
+    background-color: #0f1111;
+    height:60px;
+    display:inline;
+}
+.contentBox{
+    
+    height:30px;
+    width:300px;
+    margin-top:10px;
+    border:2px solid black;
+    
+}
+a{
+    color:white;
+    margin-right:200px;
+    text-decoration:none;
+}
+#logo{
+    color:#f08804;
+    width:200px;
+}
+
+button{
+    background-color:#f08804;
+    color:white;
+}
+footer{
+    text-align: center;
+    margin-top:400px;
+    background-color: #0f1111;
+    color: white;
+}

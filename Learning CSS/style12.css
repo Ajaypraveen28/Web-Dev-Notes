@@ -1,0 +1,65 @@
+/* TRANSITIONS ==> Transitions enables you to define the transition between two states of an element. */
+
+/* transition-property : property you wnat to transition(font-size,width,etc.)*/
+
+/* transition-duration : 2s / 4ms... */
+/* tells about the duration of transition */
+
+/* transition-timing-function : ease-in / ease-out / linear / steps... */
+/* tells how transition will take place in steps or ease-in, etc */
+
+/* transition-delay : 2s/ 4ms .... */
+/* after how much time transition will start */
+
+div {
+  height: 300px;
+  width: 300px;
+  background-color: aquamarine;
+  border: 2px solid black;
+  transition-property: all; /*actives all property of transition*/
+  transition-duration: 2s;
+  transition-timing-function: steps(5);
+  transition-delay: 500ms;
+  /* transition : all 2s ease-in 1s; */ /* this is a shorthand for all transition property. property duration timing-function delay*/
+}
+
+div:hover {
+  /*when we hover over it, we see changes in it*/
+  height: 200px;
+  width: 200px;
+  background-color: red;
+  color: whitesmoke;
+}
+
+div:active {
+  /*when we click over it and hold, we see changes in it*/
+  background-color: pink;
+}
+
+/* TRANSFORM => Used to apply 2D & #D transformations to an element */
+
+/* At one time only one transform property we can use */
+
+/* transform : scale(3,2);  it will scale box in given ratio. in x= it will be 3times and in y it will be 2times*/
+/* transform : rotate(45deg); it will rotate box to given degree*/
+/* transform : translate(100px); it will translate box by given length. We can translate in any direction x, y and z.*/
+/* transform : skew(40deg); it skew the box by given degree */
+
+#box2 {
+  height: 200px;
+  width: 200px;
+  background-color: rosybrown;
+  border: 2px solid black;
+  position: absolute;
+  top: 400px;
+  left: 200px;
+  /* transform : scale(1,2); */
+  /* transform : rotate(45deg); */
+  /* transform : translate(100px); */
+}
+#box2:hover {
+  transition-timing-function: steps(0);
+  transition-duration: 0s;
+  /* transform : translateY(-300px); */
+  transform: skew(40deg);
+}

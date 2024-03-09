@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Advanced Functions</title>
+  </head>
+  <body>
+    <button onclick="" class="js-button">Click</button>
+
+    <script>
+      /*
+      const buttonElement = document.querySelector('.js-button');
+
+      const eventListener = () => {
+        console.log('click');
+      };
+      //.addEventListner() --> Lets us run some code when we interact with the element.
+      // .addEventListner has two parameter 1. event , 2. A function that we want to run. 
+      // We can add multiple event listners for one event.
+      // We can even remove a eventListner. It also has two parameter.
+      buttonElement.addEventListener('click', eventListener);
+
+      buttonElement.removeEventListener('click', eventListener);
+
+      buttonElement.addEventListener('click', () => {
+        console.log('click2');
+      });
+      */
+
+      /*
+      greeting();
+      function greeting() {   // This function can be called from anywhere in the code i.e we can call function above or below the original function.
+        console.log('hello');
+      }
+      greeting();
+
+      const num = 2;
+      const function1 = function() {  // This function can only be called after writing this function declaration statement.
+        console.log('hello2');
+      };
+
+      console.log(function1);    //f(){ console.log('hello2'); }
+      console.log(typeof function1);  // function
+      function1();    // hello2
+
+      const object1 = {
+        num: 2,
+        fun: function() {
+          console.log('hello3');
+        }
+      };
+      object1.fun();   // hello3
+
+      function display(param) {
+        console.log(param);
+      }
+      display(2);  // 2
+
+      function run(param) {
+        param();  // hello4
+      }
+      run(function() {
+        console.log('hello4');
+      });
+      */
+
+      /*
+      //setTimeout is a build in function. It adds delay in the code. 
+      setTimeout(function() {
+        console.log('timeout');
+        console.log('timeout2');
+      }, 3000);
+
+      // Asynchronous Code - won't wait for a line to finish before going to the next line. In above code there will be 3sec delay added so remainng code will run in same order and after 3sec that statement will be executed.
+      // Advantage of setTimeout --> It doesen't block our code for 3 seconds. Remaning things will keep on executing .
+      console.log('next line');
+
+      setInterval(function() {  // It will keep running a function in  the future.
+        console.log('interval');
+      }, 3000);
+
+      console.log('next line 2');
+      */
+
+      /*
+      [
+        'make dinner',
+        'wash dishes',
+        'watch youtube'
+      ].forEach((value, index) => {  // .forEach() allows us to loop through the array.
+        // We can give second parameter in the .forEach().
+        // console.log(index);
+        // console.log(value);
+        
+        if (value === 'wash dishes') {  // does the same thing as continue do. 
+          return;
+        }
+
+        console.log(index);
+        console.log(value);
+      });
+
+      const regularFunction = function(param, param2) {
+        console.log('hello');
+        return 5;
+      };
+      // Arrow Function mostly work the same as regular functions.f
+      const arrowFunction = (param, param2) => {
+        console.log('hello');
+        return 5;
+      };
+      arrowFunction();
+
+      const oneParam = param => {
+        console.log(param + 1);
+      };
+      oneParam(2);
+
+      const oneLine = () => 2 + 3;
+      console.log(oneLine());
+
+      const object2 = {
+        method: () => {
+
+        },
+        method() {
+
+        }
+      };
+      */
+
+      // 2 more array methods: .filter() and .map()
+      // .filter() 1.Creates a new array[]  2. return true, => put value in array.  3. return false, => not put valuse in array
+      console.log(
+        [1, -3, 5].filter((value, index) => {
+          /*
+        if (value >= 0) {
+          return true;
+        } else {
+          return false;
+        }
+        */
+
+          return value >= 0;
+        })
+      );
+
+      //.map() will transform an array into another array.
+      console.log(
+        [1, 1, 3].map((value, index) => {
+          return value * 2;
+        })
+      );
+
+      console.log([1, 1, 3].map((value) => value * 2));
+
+      // Closure --> If a function has access to a value, it will always have access to that value.
+    </script>
+  </body>
+</html>

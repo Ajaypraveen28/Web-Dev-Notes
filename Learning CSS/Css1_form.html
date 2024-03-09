@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+  <!-- is used to group several controls as well as labels (<label>) within a web form. -->
+  <fieldset>
+    <legend>Registration Form</legend>
+      <label for="100">Enter Username</label>
+      <input type="text" id="100" placeholder="Username"/>
+      <br><br>
+      <label for="1000">Enter Password</label>
+      <input type="password" id="1000" placeholder="password" />
+      <br /><br />
+
+      <!-- IDS are unique for all elements -->
+      <h3>Select your class</h3>
+      <input type="radio" value="class IX" name="class" id="101" /> class IX
+      <br />
+      <input type="radio" value="calss X" name="class" id="102" /> class X
+      <br />
+      
+      <h3>Feedback</h3>
+      <textarea name="feedback" id="101" placeholder="please give your valuable feedback here" rows="5" cols="20"></textarea>
+      <br><br>
+      <label for="selector1" class="learning">Select your city</label>
+        <select name="city" id="selector1">
+            <option value="Delhi">Delhi</option>
+            <option value="chenni">Chenni</option>
+            <option value="mumbai">Mumbai</option>
+            <option value="pune">Pune</option>
+        </select>
+      <br><br>
+
+      <label for="dateOfBirth" class="learning">Date of Birth</label>
+      <input type="date" name="dateOfBirth" id="dateOfBirth">
+      <br><br>
+
+      <label for="fileselect1" class="learning">Upload :</label>
+      <input type="file" name="file select" id="fileselect1">
+      <br><br>
+
+      <input type="image" name="imagebutton" id="imagebutton1" alt="click here" src="https://www.oiml.org/en/ressources/icons/download-button.jpg/@@images/3139e560-3f59-4ee9-a5e4-71f0ee9535eb.png"
+      height="50px" width="50px">
+      <br><br>
+      
+      <button>Click Me</button>
+      <br><br>
+      <input type="submit" value="submit">
+
+    </fieldset>
+
+</body>
+</html>

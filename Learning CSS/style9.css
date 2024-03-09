@@ -1,0 +1,74 @@
+/* Flexbox : Flexible Box layout. It is a one-dimensional layout method for arranging items in rows or columns. */
+
+/* Flexbox Direction : it sets how flex items are places in the flex container, along which axis and direction */
+ 
+/* flex-direction : row(defult) --> main axis = row = left to right
+
+flex-direcrtion : row-reverse; --> main axis = row = right to left
+ 
+flex-direction : column --> main axis = column = top to down
+
+flex-direction : column-reverse -->  main axis = column = bottom to top*/
+
+/* all items will stay in the flex box and they will arrange there size automatically according to box.
+They can only go out of box if content present in it is not coming inside the box */
+
+
+/* FLEX PROPERTIES */
+
+/* justify-content : alignment along the main axis.
+flex-start / flex-end / center / space-evenly / space-between */
+
+/* flex-wrap  : nowrap / wrap / wrap-reverse */
+
+/* align-items : alignment along the cross axis */
+
+/* align-content : alignment of space between and around the content */
+
+/*  aline-self : alignment of individual along the cross axis.*/
+
+/* flex-grow : how much a flex item will grow relative to rest of the flex items if space is available */
+
+/* flex-shrink : how much a flex item will shrink relative to rest of the flex itmes if space is available */
+
+
+body{
+    text-align:center;
+}
+
+div{
+    height:50px;
+    width:200px;
+    display:inline-block;
+    border : 2px solid black;
+}
+ #container{
+    width:500px;
+    height:300px;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    /* flex-wrap: wrap-reverse; */
+}
+#box1{
+    background-color: aqua;
+    height: 200px;
+    align-self:flex-end;
+}
+#box2{
+    background-color: antiquewhite;
+    height: 100px;
+    flex-grow:1.5;
+}
+#box3{
+    background-color: blue;
+    width: 100px;
+    flex-shrink: 2;
+}
+#box4{
+    background-color:blueviolet
+}
+#box5{
+    background-color:brown;
+}
+

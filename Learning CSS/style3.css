@@ -1,0 +1,47 @@
+p{
+    /* The text-align CSS property sets the horizontal alignment of the
+     inline-level content inside a block element or table-cell box.*/
+    text-align : right; 
+
+     /*The text-decoration shorthand CSS property sets the appearance 
+     of decorative lines on text.*/
+    text-decoration: blue dotted overline;
+
+    /* The font-weight CSS property sets the weight (or boldness) of the font.
+     The weights available depend on the font-family that is currently set. */
+    font-weight: 600;
+
+    /* The font-family CSS property specifies a prioritized (from highest priority to lowest)
+    list of one or more font family names and/or generic family names for the selected element. */
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+a{
+    text-decoration: none; 
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:700;
+    font-size:40px;
+}
+#one{
+    /* The font-size CSS property sets the size of the font. Changing the font size
+     also updates the sizes of the font size-relative <length> units */
+    font-size :20px;
+    text-align:center;
+    text-decoration:none;
+
+    /* It's commonly used to set the distance between lines of text. 
+    On block-level elements, it specifies the minimum height of line boxes within the element. */
+    line-height:normal;
+
+    /* The text-transform CSS property specifies how to capitalize an element's text.
+    It can be used to make text appear in all-uppercase or all-lowercase, or with each word capitalized.
+    It also can help improve legibility for ruby. */
+    text-transform:capitalize;
+}
+#outer{
+    font-size:25px;
+}
+#inner{
+    font-size:10px;
+}
+

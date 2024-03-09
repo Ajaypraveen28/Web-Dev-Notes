@@ -1,0 +1,29 @@
+.navbar{
+   background-color: pink;
+   display: flex;
+   justify-content: space-evenly;
+}
+a{
+   text-decoration: none;
+   color:red;
+   /* background-color: aqua; */
+}
+li{
+   list-style-type:none;
+   background-color: white;
+}
+.outer{
+   width: 400px;
+   height: 400px;
+   background-color: mediumblue;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+}
+.inner{
+   width:200px;
+   height:200px;
+   background-color: bisque;
+   
+
+}

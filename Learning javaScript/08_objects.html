@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Objects</title>
+  </head>
+  <body>
+    <script>
+      // objects make our code well organised and allow to use multiple values together.
+
+      /*
+      const product = {
+        name: 'socks',      // these are the properties of a object...
+        price: 1090
+      };
+
+      console.log(product);       // for all properties
+      console.log(product.name);  // for specific property
+      console.log(product.price);
+
+      product.name = 'cotton socks';   // updating object's property
+      console.log(product);
+
+      product.newProperty = true;
+      console.log(product);
+      // we can add new property to the object
+
+      delete product.newProperty;
+      console.log(product);
+      // we can delete new property from the object
+      */
+      
+
+      /*
+      const product2 = {
+        name: 'shirt',
+        'delivery-time': '1 day',
+        rating: {       
+          // nested object (we can have object inside an object).
+          stars: 4.5,
+          count: 87
+        },
+        
+        fun: function function1() {
+          console.log('function inside object');
+        }
+        //this is an example of function inside an object...
+        // function inside object = method
+      };
+      console.log(product2);
+      //console.log() is an method. console is an object and log is function saved inside console object.
+      console.log(product2.name);
+      console.log(product2['name']);
+      console.log(product2['delivery-time']);
+      
+      console.log(product2.rating.count);
+      product2.fun(); // we are calling function inside object.
+
+      console.log(typeof console.log);
+
+      console.log(JSON.stringify(product2));
+      // from JSON.stringify() we can convert any thing into sting of JSON format.
+
+      const jsonString = JSON.stringify(product2);
+      console.log(JSON.parse(jsonString));
+      //from JSON.parse() we can convert back JSON string to Javascript.
+      */
+      
+
+      // ----------------------------------------------------------
+
+      
+      console.log('hello'.length);
+      console.log('hello'.toUpperCase());
+
+      const object1 = {
+        message: 'hello',
+        price: 799
+      };
+      const object2 = object1;  // call by reference. We are noy copying original content.
+
+      object1.message = 'Good job!';
+      console.log(object1);  // {message : Good job!}
+      console.log(object2);  // {message : Good job!}
+
+      const object3 = {
+        message: 'Good job!',
+        price: 799
+      };
+      console.log(object1 === object3); 
+      // False --> cause address of object1 and object3 is different.
+
+      // const message = object1.message;
+      const { message, price: cost } = object1;   // Destructuring shortcut took the property out of the object...
+      console.log(message);
+      console.log(cost);
+
+      const object4 = {
+        // message: message,
+        message,
+        // method: function function1() {
+
+        // },
+        // method: function() {
+
+        // },
+        method() {
+
+        }
+      };
+      
+    </script>
+  </body>
+</html>

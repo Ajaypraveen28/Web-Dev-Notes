@@ -1,0 +1,25 @@
+/* MEDIA QUERIES ==> Helps creat a responsive website */
+
+div{
+   height:50px;
+   width:50px;
+   background-color: pink;
+}
+
+@media(width:600px){  /* at that width there will be changes*/
+   div{
+      background-color: red;
+   }
+}
+
+@media(max-width:500px){   /* at below that width there will be changes*/
+   div{
+      background-color: green;
+   }
+}
+
+@media(min-width:200px ) and (max-width:400px){  /* between given width there will be changes*/
+   div{
+      background-color: blue;
+   }
+}
